@@ -54,7 +54,6 @@ export const id = {
 			newbie: { label: 'Masih belajar', note: 'Sedang saya dalami' }
 		},
 		details: {
-			html: 'Fondasi, dipakai di semua proyek',
 			express: 'Backend dengan JWT auth, role-based access control (Admin/Editor/Driver), transaction handling, audit logging',
 			sveltekit: 'Dashboard admin dengan infinite scroll, autosuggest, dan state management custom',
 			mysql: 'Connection pooling dan query kompleks untuk reporting',
@@ -75,6 +74,7 @@ export const id = {
 		decline: 'Tidak'
 	},
 	waMessages: {
+		projects: 'Halo Radifan, saya melihat portofolio kamu dan ingin membahas proyek.',
 		package: 'Halo Radifan, saya tertarik dengan paket {name}.',
 		upsell: 'Halo Radifan, saya ingin tanya soal layanan {name}.',
 		hero: 'Halo Radifan, saya ingin konsultasi soal website.',
@@ -101,6 +101,11 @@ export const id = {
 		backend: 'Repo backend',
 		repo: 'Lihat repo',
 		noRepo: 'Repo tidak dipublikasikan',
+		cta: {
+			title: 'Punya proyek serupa?',
+			text: 'Ceritakan kebutuhanmu, saya bantu carikan solusi dan hitung estimasinya.',
+			button: 'Ngobrol di WhatsApp'
+		},
 		kind: { client: 'Proyek klien', practice: 'Latihan' },
 		items: {
 			fasih: {

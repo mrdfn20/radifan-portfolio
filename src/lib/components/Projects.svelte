@@ -2,6 +2,8 @@
 	import { i18n } from '$lib/i18n/index.svelte';
 	import { featured, projects } from '$lib/projects';
 	import { reveal } from '$lib/actions/reveal';
+	import { waLink } from '$lib/config';
+	import { track } from '$lib/analytics';
 	import Section from './Section.svelte';
 	import Icon from './Icon.svelte';
 
@@ -13,8 +15,8 @@
 
 	<!-- Proyek unggulan: frontend + backend sebagai satu sistem -->
 	<article class="neo-card grid overflow-hidden lg:grid-cols-[0.9fr_1.1fr]" use:reveal>
-		<div class="hidden border-b-[3px] border-ink bg-blue p-8 lg:block lg:border-r-[3px] lg:border-b-0" aria-hidden="true">
-			<div class="neo-border bg-bone shadow-neo-lg">
+		<div class="hidden items-center border-b-[3px] border-ink bg-blue p-8 lg:flex lg:border-r-[3px] lg:border-b-0" aria-hidden="true">
+			<div class="neo-border w-full bg-bone shadow-neo-lg">
 				<div class="flex gap-1.5 border-b-[3px] border-ink bg-accent px-3 py-2">
 					<span class="size-2.5 rounded-full border-2 border-ink bg-bone"></span>
 					<span class="size-2.5 rounded-full border-2 border-ink bg-bone"></span>
@@ -130,5 +132,23 @@
 				</article>
 			</li>
 		{/each}
+		<li class="flex" use:reveal={(projects.length % 3) * 90}>
+			<article class="neo-card flex w-full flex-col justify-between bg-accent p-6">
+				<div>
+					<h3 class="text-2xl font-extrabold tracking-tight">{p.cta.title}</h3>
+					<p class="mt-2">{p.cta.text}</p>
+				</div>
+				<a
+					href={waLink(i18n.t.waMessages.projects)}
+					class="neo-btn mt-6 self-start bg-bone"
+					target="_blank"
+					rel="noopener noreferrer"
+					onclick={() => track('whatsapp_click', { source: 'projects' })}
+				>
+					<Icon name="whatsapp" size={20} />
+					{p.cta.button}
+				</a>
+			</article>
+		</li>
 	</ul>
 </Section>

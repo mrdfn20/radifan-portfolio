@@ -6,7 +6,7 @@ export const skillLevels: {
 	filled: 1 | 2 | 3 | 4; // panjang meter kotak
 	items: { name: string; detail?: string }[];
 }[] = [
-	{ level: 'expert', filled: 4, items: [{ name: 'HTML / CSS / JavaScript', detail: 'html' }] },
+	{ level: 'expert', filled: 4, items: [{ name: 'HTML / CSS / JavaScript' }] },
 	{
 		level: 'hard',
 		filled: 3,

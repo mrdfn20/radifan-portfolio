@@ -7,11 +7,11 @@
 
 <header class="sticky top-0 z-50 border-b-[3px] border-ink bg-accent text-ink">
 	<div class="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-		<a href="#top" class="text-xl font-extrabold tracking-tight">{i18n.t.brand}<span class="text-blue">.</span></a>
+		<a href="#top" class="inline-flex min-h-11 items-center text-xl font-extrabold tracking-tight">{i18n.t.brand}<span class="text-blue">.</span></a>
 
-		<nav class="hidden items-center gap-5 text-sm font-semibold lg:flex" aria-label="Utama">
+		<nav class="hidden items-center gap-1 text-sm font-semibold lg:flex" aria-label="Utama">
 			{#each links as key}
-				<a href="#{key}" class="underline-offset-4 hover:underline">{i18n.t.nav[key]}</a>
+				<a href="#{key}" class="inline-flex min-h-11 items-center px-2.5 underline-offset-4 hover:underline">{i18n.t.nav[key]}</a>
 			{/each}
 		</nav>
 

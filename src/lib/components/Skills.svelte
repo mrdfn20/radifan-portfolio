@@ -27,9 +27,9 @@
 					</div>
 					<p class="mt-1 font-mono text-sm">{info.note}</p>
 
-					<ul class="mt-4 space-y-3">
+					<ul class="mt-4 flex flex-wrap gap-x-2 gap-y-3">
 						{#each group.items as skill (skill.name)}
-							<li>
+							<li class={skill.detail ? 'w-full' : ''}>
 								<span class="neo-tag bg-accent">{skill.name}</span>
 								{#if skill.detail}
 									<p class="mt-1 text-sm">{detail(skill.detail)}</p>

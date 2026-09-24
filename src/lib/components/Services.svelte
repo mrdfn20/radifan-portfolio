@@ -17,9 +17,9 @@
 	<p class="-mt-4 max-w-2xl text-lg">{s.lead}</p>
 
 	<!-- Rumus harga: Biaya jasa + Domain + Hosting = Total -->
-	<ol class="mt-8 flex flex-wrap items-center gap-2 font-mono text-sm font-semibold text-ink" aria-label="Formula">
+	<ol class="mt-8 flex flex-wrap items-center gap-1.5 font-mono text-xs font-semibold text-ink sm:gap-2 sm:text-sm" aria-label="Formula">
 		{#each s.formula as part, i}
-			<li class="neo-border bg-bone px-3 py-1.5 shadow-neo {i === s.formula.length - 1 ? '!bg-accent' : ''}">{part}</li>
+			<li class="neo-border bg-bone px-2 py-1.5 shadow-neo sm:px-3 {i === s.formula.length - 1 ? '!bg-accent' : ''}">{part}</li>
 			{#if i < s.formula.length - 2}
 				<li aria-hidden="true" class="text-bone">+</li>
 			{:else if i === s.formula.length - 2}

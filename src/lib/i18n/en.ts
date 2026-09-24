@@ -56,7 +56,6 @@ export const en: typeof id = {
 			newbie: { label: 'Still learning', note: 'Currently studying' }
 		},
 		details: {
-			html: 'The foundation, used in every project',
 			express: 'Backend with JWT auth, role-based access control (Admin/Editor/Driver), transaction handling, audit logging',
 			sveltekit: 'Admin dashboards with infinite scroll, autosuggest, and custom state management',
 			mysql: 'Connection pooling and complex queries for reporting',
@@ -77,6 +76,7 @@ export const en: typeof id = {
 		decline: 'Decline'
 	},
 	waMessages: {
+		projects: 'Hello Radifan, I saw your portfolio and would like to discuss a project.',
 		package: 'Hello Radifan, I am interested in the {name} package.',
 		upsell: 'Hello Radifan, I would like to ask about the {name} service.',
 		hero: 'Hello Radifan, I would like to talk about a website.',
@@ -103,6 +103,11 @@ export const en: typeof id = {
 		backend: 'Backend repo',
 		repo: 'View repo',
 		noRepo: 'Repo not public',
+		cta: {
+			title: 'Have a similar project?',
+			text: 'Tell me what you need and I will help find a solution and estimate the cost.',
+			button: 'Chat on WhatsApp'
+		},
 		kind: { client: 'Client project', practice: 'Practice' },
 		items: {
 			fasih: {
