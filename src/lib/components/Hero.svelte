@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { i18n } from '$lib/i18n/index.svelte';
 	import { waLink } from '$lib/config';
+	import { track } from '$lib/analytics';
 	import Icon from './Icon.svelte';
 
 	const h = $derived(i18n.t.hero);
@@ -16,7 +17,13 @@
 			<p class="enter-left mt-6 max-w-xl text-lg" style="--d: 160ms">{h.sub}</p>
 
 			<div class="enter-up mt-8 flex flex-wrap gap-4" style="--d: 420ms">
-				<a href={waLink(i18n.t.waMessages.hero)} class="neo-btn" target="_blank" rel="noopener noreferrer">
+				<a
+					href={waLink(i18n.t.waMessages.hero)}
+					class="neo-btn"
+					target="_blank"
+					rel="noopener noreferrer"
+					onclick={() => track('whatsapp_click', { source: 'hero' })}
+				>
 					<Icon name="whatsapp" />
 					{h.ctaPrimary}
 				</a>

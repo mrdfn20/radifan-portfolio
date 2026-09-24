@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { i18n } from '$lib/i18n/index.svelte';
 	import { contact, waLink } from '$lib/config';
+	import { track } from '$lib/analytics';
 	import Section from './Section.svelte';
 	import Icon from './Icon.svelte';
 
@@ -23,6 +24,7 @@
 				class="neo-btn mt-6 !px-6 !py-3 text-lg"
 				target="_blank"
 				rel="noopener noreferrer"
+				onclick={() => track('whatsapp_click', { source: 'contact' })}
 			>
 				<Icon name="whatsapp" />
 				{c.cta}

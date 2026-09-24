@@ -65,6 +65,17 @@ export const en: typeof id = {
 		}
 	},
 	testimonials: { lead: 'What clients say about working with me.' },
+	meta: {
+		title: 'Muhamad Radifan Azman — Freelance Web Developer',
+		description:
+			'Freelance web developer for landing pages, websites, and custom systems. Transparent pricing, full access is yours, and a 30-day bug warranty.'
+	},
+	consent: {
+		title: 'Analytics cookies',
+		text: 'I use Google Analytics to count visitors and WhatsApp clicks. Is that okay?',
+		accept: 'Accept',
+		decline: 'Decline'
+	},
 	waMessages: {
 		package: 'Hello Radifan, I am interested in the {name} package.',
 		upsell: 'Hello Radifan, I would like to ask about the {name} service.',

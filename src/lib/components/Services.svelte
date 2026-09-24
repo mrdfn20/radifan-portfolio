@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { i18n } from '$lib/i18n/index.svelte';
 	import { waLink } from '$lib/config';
+	import { track } from '$lib/analytics';
 	import { reveal } from '$lib/actions/reveal';
 	import Section from './Section.svelte';
 	import Icon from './Icon.svelte';
@@ -48,6 +49,7 @@
 							class="neo-btn mt-6 self-start"
 							target="_blank"
 							rel="noopener noreferrer"
+							onclick={() => track('whatsapp_click', { source: `package:${id}` })}
 						>
 							<Icon name="whatsapp" size={20} />
 							{s.ask}
@@ -112,6 +114,7 @@
 							class="neo-btn mt-4 self-start bg-bone"
 							target="_blank"
 							rel="noopener noreferrer"
+							onclick={() => track('whatsapp_click', { source: `upsell:${id}` })}
 						>
 							{s.ask}
 							<Icon name="external" size={18} />

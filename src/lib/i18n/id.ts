@@ -63,6 +63,17 @@ export const id = {
 		}
 	},
 	testimonials: { lead: 'Kata klien tentang bekerja sama dengan saya.' },
+	meta: {
+		title: 'Muhamad Radifan Azman — Web Developer Freelance',
+		description:
+			'Web developer freelance untuk landing page, website, dan sistem custom. Harga transparan, akses penuh jadi milikmu, dan garansi bug 30 hari.'
+	},
+	consent: {
+		title: 'Cookie analytics',
+		text: 'Saya memakai Google Analytics untuk melihat jumlah pengunjung dan klik WhatsApp. Boleh diaktifkan?',
+		accept: 'Boleh',
+		decline: 'Tidak'
+	},
 	waMessages: {
 		package: 'Halo Radifan, saya tertarik dengan paket {name}.',
 		upsell: 'Halo Radifan, saya ingin tanya soal layanan {name}.',

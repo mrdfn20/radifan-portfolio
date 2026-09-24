@@ -5,6 +5,7 @@
 	import { i18n } from '$lib/i18n/index.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import ConsentBanner from '$lib/components/ConsentBanner.svelte';
 
 	let { children } = $props();
 
@@ -17,7 +18,14 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>Muhamad Radifan Azman — Web Developer</title>
+	<title>{i18n.t.meta.title}</title>
+	<meta name="description" content={i18n.t.meta.description} />
+	<meta name="theme-color" content="#2f55ff" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content={i18n.t.meta.title} />
+	<meta property="og:description" content={i18n.t.meta.description} />
+	<meta property="og:locale" content={i18n.locale === 'id' ? 'id_ID' : 'en_US'} />
+	<meta name="twitter:card" content="summary" />
 </svelte:head>
 
 <a
@@ -33,3 +41,4 @@
 	{@render children()}
 </main>
 <Footer />
+<ConsentBanner />
