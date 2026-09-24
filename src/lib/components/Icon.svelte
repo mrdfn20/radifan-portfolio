@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Ikon SVG (gaya Lucide), dekoratif: aria-hidden karena selalu ditemani teks.
-	type Name = 'whatsapp' | 'mail' | 'github' | 'linkedin' | 'instagram' | 'arrow';
+	type Name = 'whatsapp' | 'mail' | 'github' | 'linkedin' | 'instagram' | 'arrow' | 'external';
 	let { name, size = 22 }: { name: Name; size?: number } = $props();
 </script>
 
@@ -35,5 +35,9 @@
 		<line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
 	{:else if name === 'arrow'}
 		<path d="M5 12h14M13 6l6 6-6 6" />
+	{:else if name === 'external'}
+		<path d="M15 3h6v6" />
+		<path d="M10 14 21 3" />
+		<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
 	{/if}
 </svg>

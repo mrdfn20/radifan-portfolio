@@ -35,6 +35,51 @@ export const id = {
 		hero: 'Halo Radifan, saya ingin konsultasi soal website.',
 		contact: 'Halo Radifan, saya ingin konsultasi soal proyek saya.'
 	},
+	projects: {
+		lead: 'Sistem yang sudah dipakai bisnis nyata, dari halaman statis sampai aplikasi dengan login dan database.',
+		featuredBadge: 'Proyek unggulan',
+		featuredTitle: 'CV Anugrah Gemilang — Sistem Manajemen Galon',
+		featuredDesc:
+			'Dashboard admin dan REST API untuk bisnis galon isi ulang: pelanggan, transaksi & piutang, stok galon, armada, dan laporan dengan export CSV/PDF.',
+		highlights: [
+			'Peran berbeda untuk Admin, Editor, dan Driver',
+			'Transaksi keuangan atomic: otomatis rollback kalau ada langkah yang gagal',
+			'Audit log untuk setiap perubahan data',
+			'Deployment dengan staging dan production terpisah (GitHub Actions, PM2, nginx)'
+		],
+		evolutionTitle: 'Dari manual ke sistem',
+		evolution: [
+			{ label: 'Versi awal', text: 'Sistem Input Galon dengan Google Apps Script' },
+			{ label: 'Sekarang', text: 'Express + MySQL + SvelteKit dengan login, peran, dan laporan' }
+		],
+		frontend: 'Repo frontend',
+		backend: 'Repo backend',
+		repo: 'Lihat repo',
+		noRepo: 'Repo tidak dipublikasikan',
+		kind: { client: 'Proyek klien', practice: 'Latihan' },
+		items: {
+			fasih: {
+				title: 'Fasih Foundation — Arabic Camp',
+				desc: 'Website statis untuk lembaga kursus bahasa Arab, dengan carousel interaktif untuk menampilkan program.'
+			},
+			seaweed: {
+				title: 'Seaweed',
+				desc: 'Platform informasi untuk bisnis rumput laut: trading, ekspor, dan impor.'
+			},
+			presensi: {
+				title: 'Sistem Presensi — SMP YKTB',
+				desc: 'Presensi digital siswa yang menggantikan pencatatan manual.'
+			},
+			notesApi: {
+				title: 'Notes API',
+				desc: 'REST API CRUD dengan Node.js murni tanpa framework, lengkap dengan database migration dan koleksi test Postman.'
+			},
+			notesFirebase: {
+				title: 'Notes App — Firebase',
+				desc: 'Latihan integrasi Firebase sebagai backend aplikasi catatan.'
+			}
+		}
+	},
 	placeholder: 'Segera hadir',
 	footer: 'Dibuat oleh Muhamad Radifan Azman'
 };
