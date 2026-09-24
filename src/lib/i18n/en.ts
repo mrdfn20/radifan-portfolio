@@ -34,6 +34,8 @@ export const en: typeof id = {
 		cta: 'Chat on WhatsApp'
 	},
 	waMessages: {
+		package: 'Hello Radifan, I am interested in the {name} package.',
+		upsell: 'Hello Radifan, I would like to ask about the {name} service.',
 		hero: 'Hello Radifan, I would like to talk about a website.',
 		contact: 'Hello Radifan, I would like to talk about my project.'
 	},
@@ -82,6 +84,92 @@ export const en: typeof id = {
 			}
 		}
 	},
+	services: {
+		lead: 'Transparent pricing: you can see every component. The final price is discussed first based on your project, and the figures below are a starting point, not a fixed price.',
+		formula: ['Service fee', 'Domain', 'Hosting', 'Total'],
+		packagesTitle: 'Service packages',
+		packagesNote: 'Domain and hosting not included.',
+		ask: 'Ask about this package',
+		packages: {
+			landing: {
+				name: 'Landing Page / Business Profile',
+				scope: '1 page',
+				price: 'Rp800,000 – Rp1,500,000',
+				promo: 'First-client promo: from Rp800,000',
+				desc: 'Great for a business that is just getting online.'
+			},
+			multi: {
+				name: 'Multi-Page Website + Basic SEO',
+				scope: 'Several pages',
+				price: 'Rp2,500,000 – Rp4,000,000',
+				promo: '',
+				desc: 'Great for a business that needs a few pages: profile, services, contact, and more.'
+			},
+			system: {
+				name: 'Custom System / Web App',
+				scope: 'Login, database, admin dashboard',
+				price: 'Rp8,000,000 and up',
+				promo: '',
+				desc: 'Depends on complexity. Great for internal systems: attendance, data management, operations dashboards.'
+			}
+		},
+		managementTitle: 'Two ways to manage it',
+		management: {
+			a: {
+				name: 'A. Hosted with me',
+				tag: 'Cheaper upfront',
+				points: [
+					'Lower service fee because it uses my hosting package',
+					'Monthly maintenance Rp150,000 – Rp300,000: content updates, backups, small fixes',
+					'Great if you do not want to deal with technical work'
+				]
+			},
+			b: {
+				name: 'B. Full handover',
+				tag: 'Full control in your hands',
+				points: [
+					'You hold every credential: domain, hosting, and admin access',
+					'A video guide on how to manage the website yourself',
+					'One-time payment, no monthly commitment',
+					'Great if you want full control or have your own IT team'
+				]
+			}
+		},
+		hostingTitle: 'Domain & hosting estimates',
+		hostingNote: 'Market prices, discussed based on your needs.',
+		hosting: [
+			{ label: '.com domain', price: '± Rp150,000 – Rp250,000 / year' },
+			{ label: 'Shared hosting (static sites)', price: '± Rp300,000 – Rp600,000 / year' },
+			{ label: 'Small VPS (systems with a database)', price: '± Rp50,000 – Rp100,000 / month' }
+		],
+		upsellTitle: 'Add-on services',
+		upsellNote: 'Can be bundled as a monthly package.',
+		upsell: {
+			seo: { name: 'SEO', desc: 'Monthly contract, starting at 3–6 months.' },
+			ads: { name: 'Meta Ads / Google Ads', desc: 'Monthly ad management for faster traffic.' },
+			allin: {
+				name: 'All-in Package',
+				desc: 'Website + SEO + Ads + Social Media Management. Special pricing, discussed.'
+			}
+		}
+	},
+	process: {
+		lead: 'A clear flow from the first chat to handover.',
+		steps: [
+			{ title: 'Initial consultation', text: 'We discuss your needs over WhatsApp or a meeting (online/offline), then decide the package and price estimate.' },
+			{ title: 'Down payment', text: 'At least 30% of the total cost before work begins.' },
+			{ title: 'Development', text: 'Estimated 1–2 weeks, depending on the package complexity.' },
+			{ title: 'Revisions', text: 'Up to 2 revisions are included in the package price. The 3rd revision onward has an extra fee (confirmed first).' },
+			{ title: 'Handover', text: 'Final payment, then credentials/access are handed over (per option A or B) along with the video guide.' }
+		]
+	},
+	faq: [
+		{ q: 'How long does building a website take?', a: 'About 1–2 weeks on average, depending on complexity and how fast the client responds (content, revisions, approvals).' },
+		{ q: 'Can I request a custom design?', a: 'Yes. Discuss it at the start of the consultation so time and cost can be estimated.' },
+		{ q: 'Who fills in the website content (text, photos, etc.)?', a: 'It can be provided by the client, or we can put it together during the consultation (extra fee if full research or copywriting is needed).' },
+		{ q: 'Is there a warranty after the website is finished?', a: 'There is a 30-day warranty for technical bugs/errors after handover. Adding new features outside the original scope is counted as extra work.' },
+		{ q: 'What if I choose full handover but need help later?', a: 'You can still contact me for further help or maintenance, billed as a separate service.' }
+	],
 	placeholder: 'Coming soon',
 	footer: 'Built by Muhamad Radifan Azman'
 };
