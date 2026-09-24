@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+/* Design tokens — neobrutalism (lihat design brief) */
+@theme {
+	--color-blue: #2f55ff;
+	--color-bone: #f1e9dc;
+	--color-ink: #0d0d0d;
+	--color-accent: #ffc93c;
+	--color-accent-2: #ff6b4a;
+
+	--font-sans: 'Sora', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+	--radius-neo: 6px;
+	--shadow-neo: 4px 4px 0 var(--color-ink);
+	--shadow-neo-lg: 8px 8px 0 var(--color-ink);
+}
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+		scroll-padding-top: 5rem;
+	}
+	body {
+		@apply bg-bone font-sans text-base leading-normal text-ink;
+	}
+	:focus-visible {
+		outline: 3px solid var(--color-ink);
+		outline-offset: 3px;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+		*,
+		*::before,
+		*::after {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+		}
+	}
+}
+
+@utility neo-border {
+	@apply rounded-neo border-[3px] border-ink;
+}
+
+/* Komponen neobrutalism yang dipakai ulang di semua section */
+@layer components {
+	.neo-card {
+		@apply neo-border bg-bone text-ink shadow-neo;
+	}
+	.neo-btn {
+		@apply neo-border inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 bg-accent px-5 py-2 font-semibold text-ink shadow-neo transition-[transform,box-shadow] duration-150;
+	}
+	.neo-btn:hover {
+		transform: translate(-2px, -2px);
+		box-shadow: 6px 6px 0 var(--color-ink);
+	}
+	.neo-btn:active {
+		transform: translate(4px, 4px);
+		box-shadow: 0 0 0 var(--color-ink);
+	}
+	.neo-tag {
+		@apply neo-border inline-block bg-accent-2 px-2 py-0.5 font-mono text-xs font-semibold text-ink;
+	}
+	.section-title {
+		@apply text-4xl font-extrabold tracking-tight sm:text-5xl;
+	}
+}
