@@ -17,6 +17,7 @@ export const id = {
 		services: 'Layanan & Harga',
 		process: 'Proses Kerja',
 		faq: 'Pertanyaan Umum',
+		testimonials: 'Testimoni',
 		contact: 'Kontak'
 	},
 	hero: {
@@ -31,6 +32,37 @@ export const id = {
 		lead: 'Punya ide website atau sistem untuk bisnismu? Ceritakan kebutuhanmu, saya bantu hitung paket dan estimasinya.',
 		cta: 'Ngobrol di WhatsApp'
 	},
+	about: {
+		greeting: 'Halo, saya Radifan.',
+		p1: 'Saya Muhamad Radifan Azman, web developer freelance. Saya membangun website dan sistem untuk bisnis: dari landing page sederhana sampai aplikasi dengan login, database, dan dashboard admin.',
+		p2: 'Saya mengerjakan sisi tampilan, backend, database, sampai deployment, jadi kamu cukup berurusan dengan satu orang dari awal sampai website tayang.',
+		photoNote: 'Foto segera hadir',
+		whyTitle: 'Kenapa pilih saya',
+		why: [
+			{ title: 'Akses penuh jadi milikmu', text: 'Domain, hosting, dan akses admin diserahkan ke kamu (paket lepas kunci). Tidak ada yang dikunci.' },
+			{ title: 'Video panduan', text: 'Kamu dapat video cara mengelola websitemu sendiri, jadi tidak selalu bergantung padaku.' },
+			{ title: 'Dukungan setelah selesai', text: 'Garansi bug 30 hari, dan tetap bisa dihubungi untuk bantuan atau maintenance.' },
+			{ title: 'Harga transparan', text: 'Rentang harga dan komponen biayanya kutulis terbuka di atas, tanpa kejutan di belakang.' }
+		]
+	},
+	skills: {
+		lead: 'Dikelompokkan jujur berdasarkan seberapa dalam saya menguasainya.',
+		levels: {
+			expert: { label: 'Expert', note: 'Fondasi yang dipakai di semua proyek' },
+			hard: { label: 'Mahir', note: 'Dipakai di sistem klien' },
+			mid: { label: 'Menengah', note: 'Nyaman dipakai untuk proyek nyata' },
+			newbie: { label: 'Masih belajar', note: 'Sedang saya dalami' }
+		},
+		details: {
+			html: 'Fondasi, dipakai di semua proyek',
+			express: 'Backend dengan JWT auth, role-based access control (Admin/Editor/Driver), transaction handling, audit logging',
+			sveltekit: 'Dashboard admin dengan infinite scroll, autosuggest, dan state management custom',
+			mysql: 'Connection pooling dan query kompleks untuk reporting',
+			cicd: 'GitHub Actions, PM2, nginx reverse proxy, environment staging dan production terpisah',
+			wordpress: 'WordPress dengan custom plugin'
+		}
+	},
+	testimonials: { lead: 'Kata klien tentang bekerja sama dengan saya.' },
 	waMessages: {
 		package: 'Halo Radifan, saya tertarik dengan paket {name}.',
 		upsell: 'Halo Radifan, saya ingin tanya soal layanan {name}.',
@@ -168,6 +200,5 @@ export const id = {
 		{ q: 'Apakah ada garansi setelah website selesai?', a: 'Ada garansi bug/error teknis selama 30 hari setelah serah terima. Penambahan fitur baru di luar scope awal dihitung sebagai pekerjaan tambahan.' },
 		{ q: 'Bagaimana kalau saya pilih paket lepas kunci tapi butuh bantuan lagi?', a: 'Tetap bisa dihubungi untuk bantuan lanjutan atau maintenance, dihitung sebagai jasa terpisah.' }
 	],
-	placeholder: 'Segera hadir',
 	footer: 'Dibuat oleh Muhamad Radifan Azman'
 };

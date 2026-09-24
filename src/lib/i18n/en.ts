@@ -19,6 +19,7 @@ export const en: typeof id = {
 		services: 'Services & Pricing',
 		process: 'How I Work',
 		faq: 'FAQ',
+		testimonials: 'Testimonials',
 		contact: 'Contact'
 	},
 	hero: {
@@ -33,6 +34,37 @@ export const en: typeof id = {
 		lead: 'Have an idea for a website or system? Tell me what you need and I will help estimate the package and cost.',
 		cta: 'Chat on WhatsApp'
 	},
+	about: {
+		greeting: "Hi, I'm Radifan.",
+		p1: "I'm Muhamad Radifan Azman, a freelance web developer. I build websites and systems for businesses: from simple landing pages to apps with login, a database, and an admin dashboard.",
+		p2: 'I handle the interface, backend, database, and deployment, so you only deal with one person from start to launch.',
+		photoNote: 'Photo coming soon',
+		whyTitle: 'Why work with me',
+		why: [
+			{ title: 'Full access is yours', text: 'Domain, hosting, and admin access are handed over to you (full handover package). Nothing is locked.' },
+			{ title: 'Video guide', text: 'You get a video on how to manage your website yourself, so you never have to depend on me.' },
+			{ title: 'Support after launch', text: '30-day bug warranty, and you can still reach me for help or maintenance.' },
+			{ title: 'Transparent pricing', text: 'Price ranges and cost components are laid out openly above, with no surprises later.' }
+		]
+	},
+	skills: {
+		lead: 'Grouped honestly by how deeply I know each one.',
+		levels: {
+			expert: { label: 'Expert', note: 'The foundation used in every project' },
+			hard: { label: 'Advanced', note: 'Used in client systems' },
+			mid: { label: 'Intermediate', note: 'Comfortable using on real projects' },
+			newbie: { label: 'Still learning', note: 'Currently studying' }
+		},
+		details: {
+			html: 'The foundation, used in every project',
+			express: 'Backend with JWT auth, role-based access control (Admin/Editor/Driver), transaction handling, audit logging',
+			sveltekit: 'Admin dashboards with infinite scroll, autosuggest, and custom state management',
+			mysql: 'Connection pooling and complex queries for reporting',
+			cicd: 'GitHub Actions, PM2, nginx reverse proxy, separate staging and production environments',
+			wordpress: 'WordPress with custom plugins'
+		}
+	},
+	testimonials: { lead: 'What clients say about working with me.' },
 	waMessages: {
 		package: 'Hello Radifan, I am interested in the {name} package.',
 		upsell: 'Hello Radifan, I would like to ask about the {name} service.',
@@ -170,6 +202,5 @@ export const en: typeof id = {
 		{ q: 'Is there a warranty after the website is finished?', a: 'There is a 30-day warranty for technical bugs/errors after handover. Adding new features outside the original scope is counted as extra work.' },
 		{ q: 'What if I choose full handover but need help later?', a: 'You can still contact me for further help or maintenance, billed as a separate service.' }
 	],
-	placeholder: 'Coming soon',
 	footer: 'Built by Muhamad Radifan Azman'
 };
